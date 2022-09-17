@@ -29,5 +29,8 @@
         android:label="fragment_detail"
         tools:layout="@layout/fragment_detail" >
 
+        <argument
+            android:name="planetsDetails"
+            app:argType="com.example.mehmet_sevim_odev4.PlanetsModel" />
     </fragment>
 </navigation>
