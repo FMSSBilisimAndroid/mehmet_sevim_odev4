@@ -6,7 +6,7 @@
     <data>
         <variable
             name="adapter"
-            type="com.example.mehmet_sevim_odev4.recycler.PlanetsAdapter" />
+            type="com.example.mehmet_sevim_odev4.adapter.PlanetsAdapter" />
 
     </data>
 
@@ -18,12 +18,26 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/MenuScreenRecyclerView"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:adapter="@{adapter}"
             android:paddingLeft="@dimen/_10sdp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.545"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/MenuScreenTitle" />
+
+        <TextView
+            android:id="@+id/MenuScreenTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/open_sans_extrabold"
+            android:text="Mars Trade"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>

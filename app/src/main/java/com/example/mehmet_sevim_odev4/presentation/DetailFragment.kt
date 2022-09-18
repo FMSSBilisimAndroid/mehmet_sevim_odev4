@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.example.mehmet_sevim_odev4.databinding.FragmentDetailBinding
@@ -40,13 +41,18 @@ class DetailFragment : Fragment() {
             /**
              * butona tıklandığında bir önceki fragment'a gönderen fonksiyonu çağırıyoruz
              */
-            imageButton.setOnClickListener {
+            DetailScreenBackButton.setOnClickListener {
                 goBackFragment()
             }
             /**
              * picassoya image url gönderiyoruz
              */
-            setImageDetailScreen(img_url, imageView3)
+            setImageDetailScreen(img_url, DetailScreenPlanetsImage)
+
+            DetailScreenBuyOrRentButton.setOnClickListener {
+                Toast.makeText(context, type+" successful", Toast.LENGTH_SHORT).show()
+                goBackFragment()
+            }
         }
 
     }
@@ -80,9 +86,9 @@ class DetailFragment : Fragment() {
      */
     fun setDetailScreenData(type: String, price: String, id: String) {
         fragmentDetailBinding.apply {
-            button3.text = "$type"
-            textView2.text = "$price"
-            textView3.text = "$id"
+            DetailScreenBuyOrRentButton.text = "$type"
+            DetailScreenPrice.text = "$price"
+            DetailScreenLocation.text = "$id"
 
 
         }

@@ -1,4 +1,4 @@
-package com.example.mehmet_sevim_odev4.recycler
+package com.example.mehmet_sevim_odev4.adapter
 
 import android.widget.ImageView
 import androidx.databinding.ViewDataBinding
@@ -17,7 +17,8 @@ class PlanetsViewHolder (
         planetsBind.apply {
             root.setOnClickListener{onItemClickHandler(planetsModel)}
             setVariable(BR.planetsModel,planetsModel)
-            setImageFromApi(planetsModel.img_src,imageView)
+            setImageFromApi(planetsModel.img_src,RecylerViewImageItem)
+            RecylerViewTextView.text="Price "+planetsModel.price.toString()
 
         }
 

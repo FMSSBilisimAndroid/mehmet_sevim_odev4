@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.mehmet_sevim_odev4.BR
-import com.example.mehmet_sevim_odev4.recycler.PlanetsAdapter
+import com.example.mehmet_sevim_odev4.adapter.PlanetsAdapter
 import com.example.mehmet_sevim_odev4.models.PlanetsModel
 import com.example.mehmet_sevim_odev4.SpacesItemDecoration
 import com.example.mehmet_sevim_odev4.data.remote.PlanetsApi

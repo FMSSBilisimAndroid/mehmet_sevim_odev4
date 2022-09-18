@@ -14,7 +14,7 @@
 
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/button"
+            android:id="@+id/LetsGoScreenLetsButton"
             style="@style/LetsGoScreenMaterial"
             android:layout_width="@dimen/_280sdp"
             android:layout_height="@dimen/_50sdp"
@@ -25,11 +25,11 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/LetsGoScreenAstronomerImage"
             app:layout_constraintVertical_bias="0.0" />
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/LetsGoScreenAstronomerImage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_170sdp"
@@ -39,7 +39,7 @@
             app:srcCompat="@drawable/letsgoscreen_astronomer" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/LetsGoScreenTitle"
             android:textColor="@color/white"
             android:layout_width="@dimen/_270sdp"
             android:layout_height="@dimen/_120sdp"
@@ -47,7 +47,7 @@
             android:fontFamily="@font/open_sans_extrabold"
             android:text="Let's Explore the\nSolar System\nwith Explorer"
             android:textSize="@dimen/_30ssp"
-            app:layout_constraintBottom_toTopOf="@+id/imageView4"
+            app:layout_constraintBottom_toTopOf="@+id/LetsGoScreenAstronomerImage"
             app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

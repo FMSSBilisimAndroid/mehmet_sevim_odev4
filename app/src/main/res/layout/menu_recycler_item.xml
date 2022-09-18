@@ -9,18 +9,41 @@
             type="com.example.mehmet_sevim_odev4.models.PlanetsModel" />
 
     </data>
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/imageView"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
             android:layout_width="@dimen/_135sdp"
             android:layout_height="@dimen/_150sdp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            android:elevation="10dp"
+            app:cardCornerRadius="20dp"
+            tools:ignore="MissingConstraints">
 
-           />
+            <ImageView
+                android:id="@+id/RecylerViewImageItem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_loading"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/RecylerViewTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 </layout>

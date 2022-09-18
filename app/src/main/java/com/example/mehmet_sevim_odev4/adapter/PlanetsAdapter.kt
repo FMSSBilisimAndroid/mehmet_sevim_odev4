@@ -1,4 +1,4 @@
-package com.example.mehmet_sevim_odev4.recycler
+package com.example.mehmet_sevim_odev4.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

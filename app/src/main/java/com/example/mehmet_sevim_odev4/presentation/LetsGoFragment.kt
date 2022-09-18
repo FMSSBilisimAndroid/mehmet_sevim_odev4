@@ -30,7 +30,7 @@ class LetsGoFragment : Fragment() {
      */
     private fun goNextFragment() {
         fragmentLetsGoBinding.apply {
-            button.setOnClickListener {
+            LetsGoScreenLetsButton.setOnClickListener {
                 findNavController().navigate(R.id.action_letsGoFragment_to_menuFragment)
             }
         }
