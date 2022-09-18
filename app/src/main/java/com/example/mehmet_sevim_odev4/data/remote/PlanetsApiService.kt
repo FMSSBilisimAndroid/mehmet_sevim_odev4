@@ -1,6 +1,6 @@
 package com.example.mehmet_sevim_odev4.data.remote
 
-import com.example.mehmet_sevim_odev4.PlanetsModel
+import com.example.mehmet_sevim_odev4.models.PlanetsModel
 import retrofit2.Call
 import retrofit2.http.GET
 

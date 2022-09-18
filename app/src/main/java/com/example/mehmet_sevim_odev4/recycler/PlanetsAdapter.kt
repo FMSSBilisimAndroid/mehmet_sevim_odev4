@@ -6,7 +6,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mehmet_sevim_odev4.R
-import com.example.mehmet_sevim_odev4.PlanetsModel
+import com.example.mehmet_sevim_odev4.models.PlanetsModel
 
 class PlanetsAdapter (private val list: List<PlanetsModel>,
                       private val onItemClickHandler: (planetsModel: PlanetsModel) -> Unit

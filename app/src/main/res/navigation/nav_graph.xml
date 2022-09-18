@@ -33,6 +33,6 @@
 
         <argument
             android:name="planetsDetails"
-            app:argType="com.example.mehmet_sevim_odev4.PlanetsModel" />
+            app:argType="com.example.mehmet_sevim_odev4.models.PlanetsModel" />
     </fragment>
 </navigation>
