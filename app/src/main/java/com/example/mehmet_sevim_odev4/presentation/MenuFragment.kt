@@ -9,7 +9,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.mehmet_sevim_odev4.BR
 import com.example.mehmet_sevim_odev4.recycler.PlanetsAdapter
-import com.example.mehmet_sevim_odev4.model.PlanetsModel
+import com.example.mehmet_sevim_odev4.PlanetsModel
 import com.example.mehmet_sevim_odev4.SpacesItemDecoration
 import com.example.mehmet_sevim_odev4.data.remote.PlanetsApi
 import com.example.mehmet_sevim_odev4.databinding.FragmentMenuBinding
@@ -46,7 +46,7 @@ private lateinit var fragmentMenuBinding: FragmentMenuBinding
                 }
                 val gridLayoutManager=GridLayoutManager(context,2)
                 fragmentMenuBinding.apply {
-                    with(recyclerView){
+                    with(MenuScreenRecyclerView){
                     layoutManager = gridLayoutManager
                     addItemDecoration(SpacesItemDecoration(15))
                     }

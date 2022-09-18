@@ -1,4 +1,4 @@
-package com.example.mehmet_sevim_odev4.model
+package com.example.mehmet_sevim_odev4
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize

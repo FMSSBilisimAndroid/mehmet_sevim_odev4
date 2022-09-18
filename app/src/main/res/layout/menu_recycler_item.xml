@@ -6,7 +6,7 @@
     <data>
         <variable
             name="planetsModel"
-            type="com.example.mehmet_sevim_odev4.model.PlanetsModel" />
+            type="com.example.mehmet_sevim_odev4.PlanetsModel" />
 
     </data>
 

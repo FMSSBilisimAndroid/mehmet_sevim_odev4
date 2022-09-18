@@ -5,7 +5,7 @@ import androidx.databinding.ViewDataBinding
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mehmet_sevim_odev4.BR
 import com.example.mehmet_sevim_odev4.databinding.MenuRecyclerItemBinding
-import com.example.mehmet_sevim_odev4.model.PlanetsModel
+import com.example.mehmet_sevim_odev4.PlanetsModel
 import com.squareup.picasso.Picasso
 
 class PlanetsViewHolder (
