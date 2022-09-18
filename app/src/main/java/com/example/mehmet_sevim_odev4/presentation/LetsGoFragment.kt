@@ -1,4 +1,4 @@
-package com.example.mehmet_sevim_odev4
+package com.example.mehmet_sevim_odev4.presentation
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.example.mehmet_sevim_odev4.R
 import com.example.mehmet_sevim_odev4.databinding.FragmentLetsGoBinding
 
 
@@ -27,5 +28,6 @@ class LetsGoFragment : Fragment() {
             }
         }
     }
+
 
 }

@@ -10,17 +10,45 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".LetsGoFragment">
+        tools:context=".presentation.LetsGoFragment">
 
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button"
+            style="@style/LetsGoScreenMaterial"
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:text="Let's Go"
+            app:icon="@drawable/letsgoscreen_button_icon_rocket"
+            app:iconGravity="textEnd"
+            app:iconTint="@null"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView4"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_170sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/letsgoscreen_astronomer" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:textColor="@color/white"
+            android:layout_width="@dimen/_270sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:fontFamily="@font/open_sans_extrabold"
+            android:text="Let's Explore the\nSolar System\nwith Explorer"
+            android:textSize="@dimen/_30ssp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView4"
+            app:layout_constraintStart_toStartOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

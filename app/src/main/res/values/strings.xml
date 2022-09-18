@@ -1,5 +1,8 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">mehmet_sevim_odev4</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="html" tools:ignore="Typos"><![CDATA[<p><font color=#000>Let’s Explore the</font><br>
+    <b><font color=#F9AD1A>Solar System</font><b><br><b><font color=#000>with</font><font color=#F9AD1A> Explorer</font><b></p>]]>
+    </string>
 </resources>

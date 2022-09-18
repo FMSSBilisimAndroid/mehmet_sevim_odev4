@@ -1,18 +1,18 @@
-package com.example.mehmet_sevim_odev4
+package com.example.mehmet_sevim_odev4.presentation
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
+import com.example.mehmet_sevim_odev4.BR
+import com.example.mehmet_sevim_odev4.recycler.PlanetsAdapter
+import com.example.mehmet_sevim_odev4.model.PlanetsModel
+import com.example.mehmet_sevim_odev4.SpacesItemDecoration
+import com.example.mehmet_sevim_odev4.data.remote.PlanetsApi
 import com.example.mehmet_sevim_odev4.databinding.FragmentMenuBinding
-import com.example.mehmet_sevim_odev4.databinding.MenuRecyclerItemBinding
-import com.squareup.picasso.Picasso
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -39,14 +39,18 @@ private lateinit var fragmentMenuBinding: FragmentMenuBinding
 
     private fun getAllDataFromApi(){
         PlanetsApi.retrofitService.getProperties().enqueue(object : Callback<List<PlanetsModel>>{
-            override fun onResponse(call: Call<List<PlanetsModel>>,response: Response<List<PlanetsModel>>){
+            override fun onResponse(call: Call<List<PlanetsModel>>, response: Response<List<PlanetsModel>>){
                 val adapter = PlanetsAdapter(response.body()!!){
-                    val action = MenuFragmentDirections.actionMenuFragmentToDetailFragment(planetsDetails = it)
-                    findNavController().navigate(action)
+                    val planetsDetailActions = MenuFragmentDirections.actionMenuFragmentToDetailFragment(planetsDetails = it)
+                    findNavController().navigate(planetsDetailActions)
                 }
                 val gridLayoutManager=GridLayoutManager(context,2)
                 fragmentMenuBinding.apply {
-                    recyclerView.layoutManager = gridLayoutManager
+                    with(recyclerView){
+                    layoutManager = gridLayoutManager
+                    addItemDecoration(SpacesItemDecoration(15))
+                    }
+
                     setVariable(BR.adapter,adapter)
                 }
             }

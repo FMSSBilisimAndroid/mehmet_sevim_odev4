@@ -3,10 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/mehme/kotlin/mehmet_sevim_odev4/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/mehme/kotlin/mehmet_sevim_odev4/app/src/main/res/drawable/background.xml" value="0.1" />
+        <entry key="..\:/Users/mehme/kotlin/mehmet_sevim_odev4/app/src/main/res/drawable/ic_astronomer_studying_stars_with_a_telescope.xml" value="0.1" />
+        <entry key="..\:/Users/mehme/kotlin/mehmet_sevim_odev4/app/src/main/res/drawable/ic_back_svgrepo_com.xml" value="0.1" />
+        <entry key="..\:/Users/mehme/kotlin/mehmet_sevim_odev4/app/src/main/res/drawable/ic_back_svgrepo_com__1_.xml" value="0.1" />
+        <entry key="..\:/Users/mehme/kotlin/mehmet_sevim_odev4/app/src/main/res/drawable/ic_home.xml" value="0.1" />
+        <entry key="..\:/Users/mehme/kotlin/mehmet_sevim_odev4/app/src/main/res/drawable/ic_home__1_.xml" value="0.1" />
+        <entry key="..\:/Users/mehme/kotlin/mehmet_sevim_odev4/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/Users/mehme/kotlin/mehmet_sevim_odev4/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
         <entry key="..\:/Users/mehme/kotlin/mehmet_sevim_odev4/app/src/main/res/layout/activity_try.xml" value="0.16452442159383032" />
         <entry key="..\:/Users/mehme/kotlin/mehmet_sevim_odev4/app/src/main/res/layout/fragment_detail.xml" value="0.1675531914893617" />
-        <entry key="..\:/Users/mehme/kotlin/mehmet_sevim_odev4/app/src/main/res/layout/fragment_lets_go.xml" value="0.16279069767441862" />
+        <entry key="..\:/Users/mehme/kotlin/mehmet_sevim_odev4/app/src/main/res/layout/fragment_lets_go.xml" value="0.23703703703703705" />
         <entry key="..\:/Users/mehme/kotlin/mehmet_sevim_odev4/app/src/main/res/layout/fragment_menu.xml" value="0.1" />
         <entry key="..\:/Users/mehme/kotlin/mehmet_sevim_odev4/app/src/main/res/layout/menu_recycler_item.xml" value="0.19626168224299065" />
       </map>
