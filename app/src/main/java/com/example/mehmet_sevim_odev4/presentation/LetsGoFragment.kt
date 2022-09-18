@@ -1,6 +1,7 @@
 package com.example.mehmet_sevim_odev4.presentation
 
 import android.os.Bundle
+import android.text.Html
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -22,7 +23,12 @@ class LetsGoFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        goNextFragment()
+        fragmentLetsGoBinding.apply {
+            LetsGoScreenLetsButton.setOnClickListener {
+                goNextFragment()
+            }
+            LetsGoScreenTitle.text=Html.fromHtml(getString(R.string.htmltitle))
+        }
     }
 
     /**
@@ -30,9 +36,7 @@ class LetsGoFragment : Fragment() {
      */
     private fun goNextFragment() {
         fragmentLetsGoBinding.apply {
-            LetsGoScreenLetsButton.setOnClickListener {
                 findNavController().navigate(R.id.action_letsGoFragment_to_menuFragment)
-            }
         }
     }
 }

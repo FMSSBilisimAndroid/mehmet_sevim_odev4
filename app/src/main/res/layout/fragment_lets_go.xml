@@ -45,7 +45,6 @@
             android:layout_height="@dimen/_120sdp"
             android:layout_marginStart="@dimen/_14sdp"
             android:fontFamily="@font/open_sans_extrabold"
-            android:text="Let's Explore the\nSolar System\nwith Explorer"
             android:textSize="@dimen/_30ssp"
             app:layout_constraintBottom_toTopOf="@+id/LetsGoScreenAstronomerImage"
             app:layout_constraintStart_toStartOf="parent" />
